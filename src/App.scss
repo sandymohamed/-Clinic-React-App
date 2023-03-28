@@ -1,34 +1,31 @@
-.button {
-  background: #00856F;
-  border-radius: 40px;
-  width: 13rem;
-  font-size: 1.6rem;
-  padding: .5rem 1rem;
 
-  &:hover{
-    background: #488b80;
+  .button {
+    background: #00856F;
+    border-radius: 40px;
+    width: 13rem;
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
+
+    &:hover {
+      background: #488b80;
+    }
   }
-}
-.r{
-  position: relative;
-  top: 0;left: 0;
-}
-.experience-position{
-  position: relative;
-top: -10vh;
-   left: 0;
 
-}
+  .r {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
-
-
-  .card{
-    border: none;
-    box-shadow: .1rem .1rem .1rem .1rem #888888;
+  .experience-position {
+    position: relative;
+    top: -10vh;
+    left: 0;
 
   }
 
-  .head-title{
+
+  .head-title {
     text-shadow: .9px .9px .9px #4b4f4e;
     font-weight: 900;
     margin-top: .5vh;

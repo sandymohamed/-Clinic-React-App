@@ -1,16 +1,42 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState } from "react";
+import "./Card.scss";
 
-const Card = ({title, desc}) => {
-    return (
-        <div className='card  p-3 m-2' data-aos="fade-up" data-aos-delay="200">
-            <div className='icon'>
-            <FontAwesomeIcon className='text-success fs-5' icon="fa-solid fa-check-circle" />
-            </div>
-            <h3  data-aos="fade-left" data-aos-delay="400">{title}</h3>
-            <p>{desc}</p>
-        </div>
-    );
+const Card = (props) => {
+  const { title, description, imageUrls } = props;
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handlePrevClick = () => {
+    const previousSlide = currentSlide === 0 ? imageUrls.length - 1 : currentSlide - 1;
+    setCurrentSlide(previousSlide);
+  };
+
+  const handleNextClick = () => {
+    const nextSlide = currentSlide === imageUrls.length - 1 ? 0 : currentSlide + 1;
+    setCurrentSlide(nextSlide);
+  };
+
+  return (
+    <div className="card">
+      <div className="slider">
+        {imageUrls.map((url, index) => (
+          <img
+            key={index}
+            src={url}
+            alt={title}
+            className={index === currentSlide ? "active" : ""}
+          />
+        ))}
+        <button className="prev" style={{display: imageUrls.length > 1? 'block' : 'none'}} onClick={handlePrevClick}>
+          &#8250;
+        </button>
+        <button className="next" style={{display: imageUrls.length > 1? 'block' : 'none'}} onClick={handleNextClick}>
+          &#8249;
+        </button>
+      </div>
+      <h2>{title}</h2>
+      <p>{description}</p>
+    </div>
+  );
 };
 
 export default Card;

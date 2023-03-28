@@ -1,5 +1,5 @@
 import './contact.scss';
-import avatar from "../../../assets/avatar.webp"
+// import avatar from "../../../assets/avatar.jpg"
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -11,7 +11,7 @@ const Contact = () => {
 
             <div  className='contact-content col-12'  data-aos="fade-up" data-aos-delay="200">
                 <p className='h1  text-center text-success text-capitalize head-title'>{t('contact')}</p>
-                <p className='h4'>Entenda quem somos e por que existimos</p>
+                {/* <p className='h4'>Entenda quem somos e por que existimos</p> */}
                 <p className=''>
                 <FontAwesomeIcon icon="fa-solid fa-mobile" /> 01009898060 /  01125570826
                 </p>
@@ -19,7 +19,7 @@ const Contact = () => {
                 <FontAwesomeIcon icon="fa-solid fa-phone-volume" /> 0863818100                   </p>
             </div>
             <div className='contact-image d-flex flex-column justify-content-center col-12 p-2' >
-                <p className='h3'>Matay: </p> 
+                <p className='h3'> {t('matay')}: </p> 
                 <p className='h2'>{t('a-address')} </p> 
 
                 <iframe
@@ -37,7 +37,7 @@ const Contact = () => {
 
             </div>
             <div className='contact-image d-flex flex-column justify-content-center col-12 p-2'>
-                <p className='h3'>Bany-Mazar: </p> 
+                <p className='h3'>{t('Bany-Mazar')}: </p> 
                 <p className='h2'>{t('b-address')} </p> 
                 <iframe
                 className='map m-4'

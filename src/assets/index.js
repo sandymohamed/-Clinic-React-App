@@ -1,0 +1,19 @@
+export const img1 = require('./IMG1.jpg');
+export const img3 = require('./IMG3.jpg');
+export const img2 = require('./IMG2.jpg');
+export const img4 = require('./IMG4.jpg');
+export const img5 = require('./IMG5.jpg');
+export const img6 = require('./IMG6.jpg');
+export const img7 = require('./IMG7.jpg');
+export const img10 = require('./IMG10.jpg');
+export const img11 = require('./IMG11.jpg');
+export const img12 = require('./IMG12.jpg');
+export const img13 = require('./IMG13.jpg');
+export const img14 = require('./IMG14.jpg');
+export const img15 = require('./IMG15.jpg');
+export const img16 = require('./IMG16.jpg');
+
+export const main = require('./main.jpg');
+export const avatar = require('./avatar.jpg');
+export const avatar2 = require('./IMG8.jpg');
+export const avatar3 = require('./IMG9.jpg');
